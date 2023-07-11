@@ -1,0 +1,40 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+$borde: 2px solid black;
+
+#quienes {
+    background-color: map-get(colors.$colors , 'azul');
+    color: map-get(colors.$colors , 'blanco');
+    padding: 2rem;
+    text-align: justify;
+}
+
+h2 {
+    font-family: map-get(fonts.$fonts , 'belanosima');
+}
+
+.contenedor {
+    font-family: map-get(fonts.$fonts , 'poppins');
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "texto"
+        "img";
+
+    p {
+        grid-area: texto;
+    }
+
+    img {
+        grid-area: img;
+        object-fit: cover;
+        max-width: 100%;
+        width: 90%;
+        border-radius: 1rem;
+        justify-self: center;
+    }
+
+}

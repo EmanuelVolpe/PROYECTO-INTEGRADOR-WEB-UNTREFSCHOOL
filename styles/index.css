@@ -21,6 +21,36 @@ header ul a:hover {
   color: hotpink !important;
 }
 
+#quienes {
+  background-color: #00425A;
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+
+h2 {
+  font-family: Belanosima;
+}
+
+.contenedor {
+  font-family: Poppins;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "texto" "img";
+}
+.contenedor p {
+  grid-area: texto;
+}
+.contenedor img {
+  grid-area: img;
+  object-fit: cover;
+  max-width: 100%;
+  width: 90%;
+  border-radius: 1rem;
+  justify-self: center;
+}
+
 * {
   padding: 0;
   margin: 0;
