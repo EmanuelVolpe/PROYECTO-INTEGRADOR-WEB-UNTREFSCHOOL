@@ -1,0 +1,38 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+
+@mixin lista() {
+
+    align-items: center;
+    font-family: map-get(fonts.$fonts , 'poppins');
+
+    a {
+        color: map-get(colors.$colors , 'negro');
+    }
+
+    a:hover {
+        color: hotpink !important;
+    }
+
+}
+
+header {
+    background-image: url(../../images/banner_mobile.jpg);
+    height: auto;
+    padding-bottom: 3rem;
+
+    h1 {
+        font-family: map-get(fonts.$fonts , 'belanosima');
+        color: map-get(colors.$colors , 'negro');
+        font-size: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    ul {
+        @include lista();
+    }
+
+}

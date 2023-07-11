@@ -1,14 +1,30 @@
-body {
-  background-color: #FC7300;
+header {
+  background-image: url(../../images/banner_mobile.jpg);
+  height: auto;
+  padding-bottom: 3rem;
+}
+header h1 {
   font-family: Belanosima;
-  font-size: 50px;
+  color: #181823;
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+header ul {
+  align-items: center;
+  font-family: Poppins;
+}
+header ul a {
+  color: #181823;
+}
+header ul a:hover {
+  color: hotpink !important;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    background-color: #00425A;
-    color: #EFF5F5;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=index.css.map */

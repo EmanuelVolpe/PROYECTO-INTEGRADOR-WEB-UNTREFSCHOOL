@@ -1,18 +1,10 @@
 @use '_colors';
 @use '_fonts';
 @use '_breakpoints';
+@use '_header';
 
-
-body {
-    background-color: map-get(colors.$colors, 'naranja');
-    font-family: map-get(fonts.$fonts, 'belanosima'), ;
-    font-size: 50px;
-}
-
-@media screen and (min-width: map-get(breakpoints.$breakpoints, 'tablet')) {
-
-    body {
-        background-color: map-get(colors.$colors, 'azul');
-        color: map-get(colors.$colors, 'blanco');
-    }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
