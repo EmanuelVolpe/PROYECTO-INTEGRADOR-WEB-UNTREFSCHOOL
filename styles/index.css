@@ -1,0 +1,14 @@
+body {
+  background-color: #FC7300;
+  font-family: Belanosima;
+  font-size: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #00425A;
+    color: #EFF5F5;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
