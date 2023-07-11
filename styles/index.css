@@ -32,23 +32,55 @@ h2 {
   font-family: Belanosima;
 }
 
-.contenedor {
+.quienes {
   font-family: Poppins;
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-areas: "texto" "img";
 }
-.contenedor p {
+.quienes p {
   grid-area: texto;
 }
-.contenedor img {
+.quienes img {
   grid-area: img;
   object-fit: cover;
   max-width: 100%;
   width: 90%;
   border-radius: 1rem;
   justify-self: center;
+  box-shadow: 0.2rem 0.2rem 0.5rem #EFF5F5;
+}
+
+#porq {
+  background-color: #1F8A70;
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+
+h2 {
+  font-family: Belanosima;
+}
+
+.porq {
+  font-family: Poppins;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "texto" "img";
+}
+.porq p {
+  grid-area: texto;
+}
+.porq img {
+  grid-area: img;
+  object-fit: cover;
+  max-width: 100%;
+  width: 90%;
+  border-radius: 1rem;
+  justify-self: center;
+  box-shadow: 0.3rem 0.3rem 0.8rem #181823;
 }
 
 * {

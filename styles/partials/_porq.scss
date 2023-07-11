@@ -2,10 +2,8 @@
 @use '_fonts';
 @use '_breakpoints';
 
-$borde: 2px solid black;
-
-#quienes {
-    background-color: map-get(colors.$colors , 'azul');
+#porq {
+    background-color: map-get(colors.$colors , 'verde');
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
     text-align: justify;
@@ -15,7 +13,7 @@ h2 {
     font-family: map-get(fonts.$fonts , 'belanosima');
 }
 
-.quienes {
+.porq {
     font-family: map-get(fonts.$fonts , 'poppins');
     display: grid;
     justify-content: center;
@@ -35,7 +33,7 @@ h2 {
         width: 90%;
         border-radius: 1rem;
         justify-self: center;
-        box-shadow: 0.2rem 0.2rem 0.5rem map-get(colors.$colors , 'blanco');
+        box-shadow: 0.3rem 0.3rem 0.8rem map-get(colors.$colors , 'negro');
     }
 
 }
