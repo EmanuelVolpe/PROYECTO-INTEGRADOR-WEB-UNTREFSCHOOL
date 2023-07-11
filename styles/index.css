@@ -134,6 +134,38 @@ h2 {
   grid-area: p4;
 }
 
+#noticias {
+  background-color: #00425A;
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+
+h2 {
+  font-family: Belanosima;
+}
+
+.noticias {
+  font-family: Poppins;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "noticia1" "noticia2" "noticia3" "noticia4";
+}
+
+.noticia1 {
+  grid-area: noticia1;
+}
+
+.noticia2 {
+  grid-area: noticia2;
+}
+
+.noticia3 {
+  grid-area: noticia3;
+}
+
 * {
   padding: 0;
   margin: 0;
