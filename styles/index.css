@@ -83,6 +83,57 @@ h2 {
   box-shadow: 0.3rem 0.3rem 0.8rem #181823;
 }
 
+#propuesta {
+  background-color: #181823;
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+
+h2 {
+  font-family: Belanosima;
+  margin-bottom: 2rem;
+}
+
+.propuesta {
+  font-family: Poppins;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "img1 p1 p1 p1" "p2 p2 p2 img2" "img3 p3 p3 p3" "p4 p4 p4 img4";
+}
+.propuesta__img {
+  width: 48px;
+  height: 48px;
+  align-self: center;
+  justify-self: center;
+}
+.propuesta__img .img1 {
+  grid-area: img1;
+}
+.propuesta__img .img2 {
+  grid-area: img2;
+}
+.propuesta__img .img3 {
+  grid-area: img3;
+}
+.propuesta__img .img4 {
+  grid-area: img4;
+}
+.propuesta .p1 {
+  grid-area: p1;
+}
+.propuesta .p2 {
+  grid-area: p2;
+}
+.propuesta .p3 {
+  grid-area: p3;
+}
+.propuesta .p4 {
+  grid-area: p4;
+}
+
 * {
   padding: 0;
   margin: 0;

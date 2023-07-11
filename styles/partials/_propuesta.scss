@@ -1,0 +1,68 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+#propuesta {
+    background-color: map-get(colors.$colors , 'negro');
+    color: map-get(colors.$colors , 'blanco');
+    padding: 2rem;
+    text-align: justify;
+}
+
+h2 {
+    font-family: map-get(fonts.$fonts , 'belanosima');
+    margin-bottom: 2rem;
+}
+
+.propuesta {
+    font-family: map-get(fonts.$fonts , 'poppins');
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "img1 p1 p1 p1"
+        "p2 p2 p2 img2"
+        "img3 p3 p3 p3"
+        "p4 p4 p4 img4";
+
+    &__img {
+        width: 48px;
+        height: 48px;
+        align-self: center;
+        justify-self: center;
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+
+        .img3 {
+            grid-area: img3;
+        }
+
+        .img4 {
+            grid-area: img4;
+        }
+    }
+
+    .p1 {
+        grid-area: p1;
+    }
+
+    .p2 {
+        grid-area: p2;
+    }
+
+    .p3 {
+        grid-area: p3;
+    }
+
+    .p4 {
+        grid-area: p4;
+    }
+
+}
