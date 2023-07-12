@@ -26,8 +26,9 @@
         //justify-items: stretch;
         //align-items: center;
         display: grid;
+        gap: 0.5rem;
         grid-column: 1rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas:
             ". af ."
             ". ai ."
