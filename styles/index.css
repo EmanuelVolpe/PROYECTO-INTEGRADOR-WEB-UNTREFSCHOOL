@@ -49,7 +49,7 @@ h2 {
   width: 90%;
   border-radius: 1rem;
   justify-self: center;
-  box-shadow: 0.2rem 0.2rem 0.5rem #EFF5F5;
+  box-shadow: 0.3rem 0.3rem 0.8rem #181823;
 }
 
 #porq {
@@ -164,6 +164,70 @@ h2 {
 
 .noticia3 {
   grid-area: noticia3;
+}
+
+#footer {
+  background-color: #1F8A70;
+  color: #EFF5F5;
+  font-family: Poppins;
+  padding: 2rem;
+  text-align: justify;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-columns: 1fr;
+  grid-template-areas: "redes" "mapa" "contacto";
+}
+#footer .redes {
+  width: 100%;
+  grid-area: redes;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  display: grid;
+  grid-column: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "af" "ai" "at";
+}
+#footer .redes a {
+  text-decoration: none;
+  color: #EFF5F5;
+}
+#footer .redes a:hover {
+  color: hotpink !important;
+}
+#footer .redes .af {
+  grid-area: af;
+}
+#footer .redes .ai {
+  grid-area: ai;
+}
+#footer .redes .at {
+  grid-area: at;
+}
+
+.mapa {
+  grid-area: mapa;
+  align-self: center;
+  justify-self: center;
+}
+.mapa iframe {
+  max-width: 500px;
+  max-height: 500px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0.3rem 0.3rem 0.8rem #181823;
+}
+
+.contacto {
+  grid-area: contacto;
+  align-self: center;
+  justify-self: center;
+}
+
+h2 {
+  font-family: Belanosima;
 }
 
 * {
