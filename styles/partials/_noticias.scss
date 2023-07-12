@@ -7,10 +7,10 @@
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
     text-align: justify;
-}
 
-h2 {
-    font-family: map-get(fonts.$fonts , 'belanosima');
+    h3 {
+        text-align: left;
+    }
 }
 
 .noticias {

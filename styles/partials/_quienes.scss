@@ -11,10 +11,6 @@ $borde: 2px solid black;
     text-align: justify;
 }
 
-h2 {
-    font-family: map-get(fonts.$fonts , 'belanosima');
-}
-
 .quienes {
     font-family: map-get(fonts.$fonts , 'poppins');
     display: grid;

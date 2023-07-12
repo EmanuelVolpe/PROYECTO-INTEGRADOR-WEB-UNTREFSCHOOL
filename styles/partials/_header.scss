@@ -24,9 +24,7 @@ header {
     padding-bottom: 3rem;
 
     h1 {
-        font-family: map-get(fonts.$fonts , 'belanosima');
         color: map-get(colors.$colors , 'negro');
-        font-size: 2rem;
         margin-top: 3rem;
         text-align: center;
     }

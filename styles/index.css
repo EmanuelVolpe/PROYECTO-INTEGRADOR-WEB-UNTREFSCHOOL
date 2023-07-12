@@ -4,9 +4,7 @@ header {
   padding-bottom: 3rem;
 }
 header h1 {
-  font-family: Belanosima;
   color: #181823;
-  font-size: 2rem;
   margin-top: 3rem;
   text-align: center;
 }
@@ -26,10 +24,6 @@ header ul a:hover {
   color: #EFF5F5;
   padding: 2rem;
   text-align: justify;
-}
-
-h2 {
-  font-family: Belanosima;
 }
 
 .quienes {
@@ -59,10 +53,6 @@ h2 {
   text-align: justify;
 }
 
-h2 {
-  font-family: Belanosima;
-}
-
 .porq {
   font-family: Poppins;
   display: grid;
@@ -88,11 +78,6 @@ h2 {
   color: #EFF5F5;
   padding: 2rem;
   text-align: justify;
-}
-
-h2 {
-  font-family: Belanosima;
-  margin-bottom: 2rem;
 }
 
 .propuesta {
@@ -140,9 +125,8 @@ h2 {
   padding: 2rem;
   text-align: justify;
 }
-
-h2 {
-  font-family: Belanosima;
+#noticias h3 {
+  text-align: left;
 }
 
 .noticias {
@@ -226,14 +210,21 @@ h2 {
   justify-self: center;
 }
 
-h2 {
-  font-family: Belanosima;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Belanosima;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Belanosima;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
