@@ -23,14 +23,14 @@
         grid-area: redes;
         justify-content: center;
         align-content: center;
-        justify-items: center;
+        justify-items: start;
         display: grid;
         grid-column: 1rem;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas:
-            "af"
-            "ai"
-            "at";
+            ". af ."
+            ". ai ."
+            ". at .";
 
         a {
             text-decoration: none;
