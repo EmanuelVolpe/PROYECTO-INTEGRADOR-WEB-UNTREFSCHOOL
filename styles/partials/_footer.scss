@@ -21,12 +21,13 @@
     .redes {
         width: 100%;
         grid-area: redes;
-        justify-content: center;
-        align-content: center;
-        justify-items: start;
+        //justify-content: center;
+        //align-content: center;
+        //justify-items: stretch;
+        //align-items: center;
         display: grid;
         grid-column: 1rem;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             ". af ."
             ". ai ."
@@ -35,6 +36,10 @@
         a {
             text-decoration: none;
             color: map-get(colors.$colors , 'blanco');
+
+            p {
+                margin: 0;
+            }
         }
 
         a:hover {
@@ -43,6 +48,7 @@
 
         .af {
             grid-area: af;
+            align-self: center;
         }
 
         .ai {

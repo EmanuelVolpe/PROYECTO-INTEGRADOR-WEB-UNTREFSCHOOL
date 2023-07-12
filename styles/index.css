@@ -166,23 +166,24 @@ header ul a:hover {
 #footer .redes {
   width: 100%;
   grid-area: redes;
-  justify-content: center;
-  align-content: center;
-  justify-items: start;
   display: grid;
   grid-column: 1rem;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: ". af ." ". ai ." ". at .";
 }
 #footer .redes a {
   text-decoration: none;
   color: #EFF5F5;
 }
+#footer .redes a p {
+  margin: 0;
+}
 #footer .redes a:hover {
   color: hotpink !important;
 }
 #footer .redes .af {
   grid-area: af;
+  align-self: center;
 }
 #footer .redes .ai {
   grid-area: ai;
