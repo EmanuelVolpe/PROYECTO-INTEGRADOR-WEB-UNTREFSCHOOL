@@ -8,6 +8,18 @@ h2 {
   font-family: Belanosima;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-family: Belanosima;
+}
+
+p,
+label,
+input,
+button {
+  font-family: Poppins;
+}
+
 h1 {
   text-align: center;
   margin-top: 2rem;

@@ -1,24 +1,42 @@
+h1 {
+  font-size: 3rem;
+  font-family: Belanosima;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Belanosima;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Belanosima;
+}
+
+p,
+label,
+input,
+button {
+  font-family: Poppins;
+}
+
 header {
   background-image: url(../../images/banner_mobile.jpg);
   height: auto;
   padding-bottom: 3rem;
 }
-
 header h1 {
   color: #181823;
   margin-top: 3rem;
   text-align: center;
 }
-
 header ul {
   align-items: center;
   font-family: Poppins;
 }
-
 header ul a {
   color: #181823;
 }
-
 header ul a:hover {
   color: hotpink !important;
 }
@@ -37,11 +55,9 @@ header ul a:hover {
   grid-template-columns: 1fr;
   grid-template-areas: "texto" "img";
 }
-
 .quienes p {
   grid-area: texto;
 }
-
 .quienes img {
   grid-area: img;
   object-fit: cover;
@@ -66,11 +82,9 @@ header ul a:hover {
   grid-template-columns: 1fr;
   grid-template-areas: "texto" "img";
 }
-
 .porq p {
   grid-area: texto;
 }
-
 .porq img {
   grid-area: img;
   object-fit: cover;
@@ -96,42 +110,33 @@ header ul a:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "img1 p1 p1 p1" "p2 p2 p2 img2" "img3 p3 p3 p3" "p4 p4 p4 img4";
 }
-
 .propuesta__img {
   width: 48px;
   height: 48px;
   align-self: center;
   justify-self: center;
 }
-
 .propuesta__img .img1 {
   grid-area: img1;
 }
-
 .propuesta__img .img2 {
   grid-area: img2;
 }
-
 .propuesta__img .img3 {
   grid-area: img3;
 }
-
 .propuesta__img .img4 {
   grid-area: img4;
 }
-
 .propuesta .p1 {
   grid-area: p1;
 }
-
 .propuesta .p2 {
   grid-area: p2;
 }
-
 .propuesta .p3 {
   grid-area: p3;
 }
-
 .propuesta .p4 {
   grid-area: p4;
 }
@@ -142,7 +147,6 @@ header ul a:hover {
   padding: 2rem;
   text-align: justify;
 }
-
 #noticias h3 {
   text-align: left;
 }
@@ -181,36 +185,32 @@ header ul a:hover {
   grid-template-columns: 1fr;
   grid-template-areas: "redes" "mapa" "contacto";
 }
-
 #footer .redes {
   width: 100%;
   grid-area: redes;
-  justify-content: center;
-  align-content: center;
-  justify-items: start;
   display: grid;
+  gap: 0.5rem;
   grid-column: 1rem;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: ". af ." ". ai ." ". at .";
 }
-
 #footer .redes a {
   text-decoration: none;
   color: #EFF5F5;
 }
-
+#footer .redes a p {
+  margin: 0;
+}
 #footer .redes a:hover {
   color: hotpink !important;
 }
-
 #footer .redes .af {
   grid-area: af;
+  align-self: center;
 }
-
 #footer .redes .ai {
   grid-area: ai;
 }
-
 #footer .redes .at {
   grid-area: at;
 }
@@ -220,7 +220,6 @@ header ul a:hover {
   align-self: center;
   justify-self: center;
 }
-
 .mapa iframe {
   max-width: 500px;
   max-height: 500px;
@@ -239,6 +238,17 @@ header ul a:hover {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Belanosima;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Belanosima;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
