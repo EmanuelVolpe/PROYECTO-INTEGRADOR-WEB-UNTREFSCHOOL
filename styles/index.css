@@ -8,6 +8,7 @@ h2 {
   font-size: 2rem;
   text-align: center;
   font-family: Belanosima;
+  color: #FC7300;
 }
 
 h3 {
@@ -27,62 +28,56 @@ header {
   background-image: url("../../images/banner_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
 }
 
 h1 {
   color: #181823;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 ul a:hover {
   color: hotpink !important;
 }
 
-#quienes {
-  background-color: #00425A;
+#main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "quienes" "porq";
+}
+
+#quienes,
+#porq {
   color: #EFF5F5;
   padding: 2rem;
   text-align: justify;
 }
 
-.quienes {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr;
-  grid-template-areas: "texto" "img";
-}
-.quienes p {
-  grid-area: texto;
-}
-.quienes img {
-  grid-area: img;
-  object-fit: cover;
-  max-width: 100%;
-  width: 90%;
-  border-radius: 1rem;
-  justify-self: center;
-  box-shadow: 0.3rem 0.3rem 0.8rem #181823;
+#quienes {
+  background-color: #00425A;
+  grid-area: quienes;
 }
 
 #porq {
   background-color: #1F8A70;
-  color: #EFF5F5;
-  padding: 2rem;
-  text-align: justify;
+  grid-area: porq;
 }
 
+.quienes,
 .porq {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-areas: "texto" "img";
 }
+.quienes p,
 .porq p {
   grid-area: texto;
 }
+.quienes img,
 .porq img {
   grid-area: img;
   object-fit: cover;
@@ -93,6 +88,12 @@ ul a:hover {
   box-shadow: 0.3rem 0.3rem 0.8rem #181823;
 }
 
+@media screen and (min-width: 768px) {
+  #main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "quienes porq";
+  }
+}
 #propuesta {
   background-color: #181823;
   color: #EFF5F5;

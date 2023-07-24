@@ -2,13 +2,33 @@
 @use '_fonts';
 @use '_breakpoints';
 
+#main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "quienes"
+        "porq";
+}
+
+#quienes,
 #porq {
-    background-color: map-get(colors.$colors , 'verde');
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
     text-align: justify;
 }
 
+#quienes {
+    background-color: map-get(colors.$colors , 'azul');
+    grid-area: quienes;
+}
+
+#porq {
+    background-color: map-get(colors.$colors , 'verde');
+    grid-area: porq;
+}
+
+.quienes,
 .porq {
     display: grid;
     justify-content: center;
@@ -31,4 +51,13 @@
         box-shadow: 0.3rem 0.3rem 0.8rem map-get(colors.$colors , 'negro');
     }
 
+}
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
+    #main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "quienes porq";
+    }
 }
