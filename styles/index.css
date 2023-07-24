@@ -163,15 +163,15 @@ ul a:hover {
 }
 #noticias h3 {
   text-align: left;
+  color: #181823;
 }
 
 .noticias {
-  font-family: Poppins;
   display: grid;
   gap: 1rem;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-template-areas: "noticia1" "noticia2" "noticia3" "noticia4";
+  grid-template-areas: "noticia1" "noticia2" "noticia3";
 }
 
 .noticia1 {
@@ -186,6 +186,15 @@ ul a:hover {
   grid-area: noticia3;
 }
 
+@media screen and (min-width: 768px) {
+  .noticias {
+    padding: 0 2rem;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "noticia1 noticia2" "noticia3 noticia3";
+  }
+}
 #footer {
   background-color: #1F8A70;
   color: #EFF5F5;
