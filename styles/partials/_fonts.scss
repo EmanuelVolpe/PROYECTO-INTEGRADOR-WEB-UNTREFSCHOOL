@@ -1,2 +1,12 @@
 $fonts : ('poppins': Poppins,
-    'belanosima': Belanosima)
+    'belanosima': Belanosima);
+
+h1 {
+    font-size: 3rem;
+    font-family: map-get($fonts , 'belanosima');
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: map-get($fonts , 'belanosima');
+}

@@ -1,3 +1,13 @@
+h1 {
+  font-size: 3rem;
+  font-family: Belanosima;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Belanosima;
+}
+
 header {
   background-image: url(../../images/banner_mobile.jpg);
   height: auto;

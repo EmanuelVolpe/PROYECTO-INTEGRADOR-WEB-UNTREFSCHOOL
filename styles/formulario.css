@@ -1,20 +1,32 @@
 h1 {
-    font-family: Belanosima, sans-serif;
-    text-align: center;
-    font-size: 3rem;
+  font-size: 3rem;
+  font-family: Belanosima;
 }
 
 h2 {
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    text-align: center;
+  font-size: 2rem;
+  font-family: Belanosima;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 body {
-    background-color: #181823;
-    color: #1F8A70;
+  background-color: #EFF5F5;
+  color: #181823;
+  font-family: Poppins;
 }
 
 .contenedor {
-    padding: 2rem;
+  padding: 2rem;
 }
+
+/*# sourceMappingURL=formulario.css.map */
