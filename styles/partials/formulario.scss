@@ -1,0 +1,24 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+body {
+    background-color: map-get(colors.$colors , 'blanco');
+    color: map-get(colors.$colors , 'negro');
+    font-family: map-get(fonts.$fonts , 'poppins');
+}
+
+.contenedor {
+    padding: 2rem;
+}
