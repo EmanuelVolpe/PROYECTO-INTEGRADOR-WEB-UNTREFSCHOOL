@@ -46,6 +46,7 @@
         object-fit: cover;
         max-width: 100%;
         width: 90%;
+        height: 100%;
         border-radius: 1rem;
         justify-self: center;
         box-shadow: 0.3rem 0.3rem 0.8rem map-get(colors.$colors , 'negro');
@@ -55,9 +56,29 @@
 
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
-    #main {
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .quienes {
+        gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "quienes porq";
+            "texto img";
+    }
+
+    .porq {
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img texto";
+    }
+
+    #quienes,
+    #porq {
+        padding: 3rem;
+
     }
 }
