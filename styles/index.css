@@ -155,6 +155,11 @@ ul a:hover {
   grid-area: p4;
 }
 
+@media screen and (min-width: 768px) {
+  .propuesta {
+    padding: 0 2rem;
+  }
+}
 #noticias {
   background-color: #00425A;
   color: #EFF5F5;
