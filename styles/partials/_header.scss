@@ -2,35 +2,22 @@
 @use '_fonts';
 @use '_breakpoints';
 
+header {
+    background-image: url("../../images/banner_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 3rem;
+}
 
-@mixin lista() {
+h1 {
+    color: map-get(colors.$colors , 'negro');
+    margin-top: 3rem;
+    text-align: center;
+}
 
-    align-items: center;
-    font-family: map-get(fonts.$fonts , 'poppins');
-
-    a {
-        color: map-get(colors.$colors , 'negro');
-    }
-
+ul {
     a:hover {
         color: hotpink !important;
     }
-
-}
-
-header {
-    background-image: url(../../images/banner_mobile.jpg);
-    height: auto;
-    padding-bottom: 3rem;
-
-    h1 {
-        color: map-get(colors.$colors , 'negro');
-        margin-top: 3rem;
-        text-align: center;
-    }
-
-    ul {
-        @include lista();
-    }
-
 }

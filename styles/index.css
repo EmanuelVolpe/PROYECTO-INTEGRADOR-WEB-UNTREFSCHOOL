@@ -1,10 +1,12 @@
 h1 {
   font-size: 3rem;
+  text-align: center;
   font-family: Belanosima;
 }
 
 h2 {
   font-size: 2rem;
+  text-align: center;
   font-family: Belanosima;
 }
 
@@ -14,6 +16,7 @@ h3 {
 }
 
 p,
+a,
 label,
 input,
 button {
@@ -21,23 +24,20 @@ button {
 }
 
 header {
-  background-image: url(../../images/banner_mobile.jpg);
+  background-image: url("../../images/banner_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
   padding-bottom: 3rem;
 }
-header h1 {
+
+h1 {
   color: #181823;
   margin-top: 3rem;
   text-align: center;
 }
-header ul {
-  align-items: center;
-  font-family: Poppins;
-}
-header ul a {
-  color: #181823;
-}
-header ul a:hover {
+
+ul a:hover {
   color: hotpink !important;
 }
 

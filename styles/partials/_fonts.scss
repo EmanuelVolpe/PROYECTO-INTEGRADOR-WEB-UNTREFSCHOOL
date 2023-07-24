@@ -3,11 +3,13 @@ $fonts : ('poppins': Poppins,
 
 h1 {
     font-size: 3rem;
+    text-align: center;
     font-family: map-get($fonts , 'belanosima');
 }
 
 h2 {
     font-size: 2rem;
+    text-align: center;
     font-family: map-get($fonts , 'belanosima');
 }
 
