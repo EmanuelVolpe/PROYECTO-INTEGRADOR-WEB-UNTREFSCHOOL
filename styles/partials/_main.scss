@@ -16,6 +16,8 @@
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
     text-align: justify;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #quienes {
