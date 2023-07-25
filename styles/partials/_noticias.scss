@@ -38,7 +38,7 @@
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
     .noticias {
-        padding: 3rem;
+        padding: 0 3rem;
         column-gap: 3rem;
         row-gap: 1rem;
         grid-template-columns: 1fr 1fr;
@@ -56,7 +56,7 @@
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints , 'desktop')) {
     .noticias {
-        padding: 3rem;
+        padding: 0 3rem;
         column-gap: 4rem;
         row-gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;

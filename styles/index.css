@@ -97,8 +97,6 @@ ul a:hover {
   color: #EFF5F5;
   padding: 2rem;
   text-align: justify;
-  height: 100vh;
-  overflow: hidden;
 }
 
 #quienes {
@@ -147,6 +145,11 @@ ul a:hover {
   #quienes,
   #porq {
     padding: 3rem 3rem;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    float: right;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -253,7 +256,7 @@ ul a:hover {
 
 @media screen and (min-width: 768px) {
   .noticias {
-    padding: 3rem;
+    padding: 0 3rem;
     column-gap: 3rem;
     row-gap: 1rem;
     grid-template-columns: 1fr 1fr;
@@ -265,7 +268,7 @@ ul a:hover {
 }
 @media screen and (min-width: 1024px) {
   .noticias {
-    padding: 3rem;
+    padding: 0 3rem;
     column-gap: 4rem;
     row-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;

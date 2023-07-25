@@ -16,8 +16,6 @@
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
     text-align: justify;
-    height: 100vh;
-    overflow: hidden;
 }
 
 #quienes {
@@ -61,6 +59,7 @@
     .quienes {
         column-gap: 2rem;
         grid-template-columns: 1fr 1fr;
+        //grid-template-rows: auto;
         grid-template-areas:
             "texto img";
     }
@@ -75,6 +74,12 @@
     #quienes,
     #porq {
         padding: 3rem 3rem;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+        float: right;
     }
 }
 
