@@ -38,12 +38,33 @@
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
     .noticias {
-        padding: 0 2rem;
+        padding: 3rem;
         column-gap: 3rem;
         row-gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "noticia1 noticia2"
             "noticia3 noticia3";
+    }
+
+    #noticias {
+        padding: 3rem 3rem;
+    }
+
+}
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'desktop')) {
+    .noticias {
+        padding: 3rem;
+        column-gap: 4rem;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "noticia1 noticia2 noticia3";
+    }
+
+    #noticias {
+        padding: 3rem 5rem;
     }
 }

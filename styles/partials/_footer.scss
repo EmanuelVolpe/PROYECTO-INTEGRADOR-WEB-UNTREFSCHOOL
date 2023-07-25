@@ -6,7 +6,7 @@
     background-color: map-get(colors.$colors, 'verde');
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
-    row-gap: 2rem;
+    row-gap: 1rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -17,7 +17,8 @@
     .redes {
         grid-area: redes;
         display: grid;
-        gap: 0.5rem;
+        justify-self: center;
+        gap: 0.8rem;
         grid-template-columns: 1fr;
         grid-template-areas:
             "af"
@@ -78,9 +79,17 @@
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
     #footer {
-        grid-template-columns: 1fr 1fr;
+        padding: 2rem 3rem;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas:
-            "redes mapa"
-            "contacto";
+            "redes mapa contacto";
+    }
+
+    .redes {
+        align-content: start;
+    }
+
+    .contacto {
+        align-content: start;
     }
 }

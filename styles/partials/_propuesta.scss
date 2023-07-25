@@ -14,12 +14,12 @@
     display: grid;
     gap: 1rem;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-        "img1 p1 p1 p1"
-        "p2 p2 p2 img2"
-        "img3 p3 p3 p3"
-        "p4 p4 p4 img4";
+        "img1 p1 p1 p1 p1 p1 p1 p1"
+        "p2 p2 p2 p2 p2 p2 p2 img2"
+        "img3 p3 p3 p3 p3 p3 p3 p3"
+        "p4 p4 p4 p4 p4 p4 p4 img4";
 
     &__img {
         width: 48px;
@@ -63,7 +63,14 @@
 }
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
-    .propuesta {
-        padding: 0 2rem;
+    #propuesta {
+        padding: 3rem 3rem;
+    }
+}
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'desktop')) {
+
+    #propuesta {
+        padding: 3rem 7rem;
     }
 }
