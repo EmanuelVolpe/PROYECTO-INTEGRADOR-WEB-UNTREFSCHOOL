@@ -14,13 +14,15 @@ h2 {
     font-size: 2rem;
     text-align: center;
     text-shadow: 3px 3px 2px map-get(colors.$colors , 'negro');
-    font-family: map-get($fonts , 'belanosima');
-    color: map-get(colors.$colors , 'naranja');
+    font-family: map-get($fonts, 'belanosima');
+    color: map-get(colors.$colors, 'naranja');
 }
 
 h3 {
     font-size: 1.5rem;
-    font-family: map-get($fonts , 'belanosima');
+    font-family: map-get($fonts, 'belanosima');
+    //text-shadow: 0.5px 0.5px 0.3px map-get(colors.$colors , 'naranja');
+    color: map-get(colors.$colors, 'negro');
 }
 
 p,
@@ -28,5 +30,5 @@ a,
 label,
 input,
 button {
-    font-family: map-get($fonts , 'poppins');
+    font-family: map-get($fonts, 'poppins');
 }
