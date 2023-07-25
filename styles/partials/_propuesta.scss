@@ -1,0 +1,236 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+#propuesta {
+    background-color: map-get(colors.$colors, 'negro');
+    color: map-get(colors.$colors, 'blanco');
+    padding: 2rem;
+    text-align: justify;
+}
+
+span {
+    color: map-get(colors.$colors, 'verde');
+    font-weight: bolder;
+}
+
+.propuesta {
+    display: grid;
+    justify-content: center;
+    row-gap: 2rem;
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+#div1 {
+    grid-area: div1;
+    display: grid;
+    justify-content: center;
+}
+
+#div2 {
+    grid-area: div2;
+    display: grid;
+    justify-content: center;
+}
+
+#div3 {
+    grid-area: div3;
+    display: grid;
+    justify-content: center;
+}
+
+#div4 {
+    grid-area: div4;
+    display: grid;
+    justify-content: center;
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+#img4 {
+    grid-area: img4;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints, 'mobile')) {
+    .propuesta {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "div1"
+            "div2"
+            "div3"
+            "div4";
+
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #div1 {
+            // column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p1"
+                "img1";
+        }
+
+        #div2 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p2"
+                "img2";
+        }
+
+        #div3 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p3"
+                "img3";
+        }
+
+        #div4 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p4"
+                "img4";
+        }
+    }
+}
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
+    #propuesta {
+        padding: 3rem 3rem;
+    }
+
+    .propuesta {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "div1"
+            "div2"
+            "div3"
+            "div4";
+
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #div1 {
+            column-gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "img1 p1";
+        }
+
+        #div2 {
+            column-gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "p2 img2";
+        }
+
+        #div3 {
+            column-gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "img3 p3";
+        }
+
+        #div4 {
+            column-gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "p4 img4";
+        }
+    }
+}
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints, 'desktop')) {
+
+    #propuesta {
+        padding: 3rem 7rem;
+    }
+
+    .propuesta {
+        column-gap: 4rem;
+        row-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "div1 div2"
+            "div3 div4";
+
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #div1 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p1"
+                "img1";
+        }
+
+        #div2 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p2"
+                "img2";
+        }
+
+        #div3 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p3"
+                "img3";
+        }
+
+        #div4 {
+            //column-gap: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "p4"
+                "img4";
+        }
+    }
+}

@@ -1,14 +1,482 @@
-body {
-  background-color: #FC7300;
-  font-family: Belanosima;
-  font-size: 50px;
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5rem;
+    font-family: Belanosima;
+    text-shadow: 2px 2px 2px #FC7300;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 3px 3px 2px #181823;
+    font-family: Belanosima;
+    color: #FC7300;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-family: Belanosima;
+    color: #181823;
+  }
+  p,
+  a,
+  label,
+  input,
+  button {
+    font-family: Poppins;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p,
+  a,
+  label,
+  input,
+  button {
+    font-family: Poppins;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p,
+  a,
+  label,
+  input,
+  button {
+    font-family: Poppins;
+    font-size: 1.3rem;
+  }
+}
+header {
+  background-image: url("../../images/banner_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+h1 {
+  color: #181823;
+}
+
+ul a:hover {
+  color: hotpink !important;
+}
+
+@media screen and (min-width: 320px) {
+  header {
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 3rem;
+  }
+}
+#main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "quienes" "porq";
+}
+
+#quienes,
+#porq {
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+
+#quienes {
+  background-color: #00425A;
+  grid-area: quienes;
+}
+
+#porq {
+  background-color: #1F8A70;
+  grid-area: porq;
+}
+
+.quienes,
+.porq {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "texto" "img";
+}
+.quienes p,
+.porq p {
+  grid-area: texto;
+}
+.quienes img,
+.porq img {
+  grid-area: img;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  justify-self: center;
+  box-shadow: 0.3rem 0.3rem 0.8rem #181823;
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    background-color: #00425A;
-    color: #EFF5F5;
+  .quienes {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto img";
   }
+  .porq {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img texto";
+  }
+  #quienes,
+  #porq {
+    padding: 3rem 3rem;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    float: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .quienes {
+    column-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto img";
+  }
+  .porq {
+    column-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img texto";
+  }
+  #quienes,
+  #porq {
+    padding: 3rem 7rem;
+  }
+}
+#propuesta {
+  background-color: #181823;
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+
+span {
+  color: #1F8A70;
+  font-weight: bolder;
+}
+
+.propuesta {
+  display: grid;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.propuesta__img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#div1 {
+  grid-area: div1;
+  display: grid;
+  justify-content: center;
+}
+
+#div2 {
+  grid-area: div2;
+  display: grid;
+  justify-content: center;
+}
+
+#div3 {
+  grid-area: div3;
+  display: grid;
+  justify-content: center;
+}
+
+#div4 {
+  grid-area: div4;
+  display: grid;
+  justify-content: center;
+}
+
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+
+#img4 {
+  grid-area: img4;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.p3 {
+  grid-area: p3;
+}
+
+.p4 {
+  grid-area: p4;
+}
+
+@media screen and (min-width: 320px) {
+  .propuesta {
+    grid-template-columns: 1fr;
+    grid-template-areas: "div1" "div2" "div3" "div4";
+  }
+  .propuesta__img {
+    width: 100%;
+    height: 100%;
+  }
+  .propuesta #div1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p1" "img1";
+  }
+  .propuesta #div2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p2" "img2";
+  }
+  .propuesta #div3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p3" "img3";
+  }
+  .propuesta #div4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p4" "img4";
+  }
+}
+@media screen and (min-width: 768px) {
+  #propuesta {
+    padding: 3rem 3rem;
+  }
+  .propuesta {
+    grid-template-columns: 1fr;
+    grid-template-areas: "div1" "div2" "div3" "div4";
+  }
+  .propuesta__img {
+    width: 100%;
+    height: 100%;
+  }
+  .propuesta #div1 {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img1 p1";
+  }
+  .propuesta #div2 {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "p2 img2";
+  }
+  .propuesta #div3 {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img3 p3";
+  }
+  .propuesta #div4 {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "p4 img4";
+  }
+}
+@media screen and (min-width: 1024px) {
+  #propuesta {
+    padding: 3rem 7rem;
+  }
+  .propuesta {
+    column-gap: 4rem;
+    row-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div1 div2" "div3 div4";
+  }
+  .propuesta__img {
+    width: 100%;
+    height: 100%;
+  }
+  .propuesta #div1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p1" "img1";
+  }
+  .propuesta #div2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p2" "img2";
+  }
+  .propuesta #div3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p3" "img3";
+  }
+  .propuesta #div4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p4" "img4";
+  }
+}
+#noticias {
+  background-color: #00425A;
+  color: #EFF5F5;
+  padding: 2rem;
+  text-align: justify;
+}
+#noticias h3 {
+  text-align: left;
+}
+
+.noticias {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "noticia1" "noticia2" "noticia3";
+}
+
+.noticia1 {
+  grid-area: noticia1;
+}
+
+.noticia2 {
+  grid-area: noticia2;
+}
+
+.noticia3 {
+  grid-area: noticia3;
+}
+
+@media screen and (min-width: 768px) {
+  .noticias {
+    padding: 0 3rem;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "noticia1 noticia2" "noticia3 noticia3";
+  }
+  #noticias {
+    padding: 3rem 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .noticias {
+    padding: 0 3rem;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "noticia1 noticia2 noticia3";
+  }
+  #noticias {
+    padding: 3rem 5rem;
+  }
+}
+#footer {
+  background-color: #1F8A70;
+  color: #EFF5F5;
+  height: auto;
+  padding: 2rem;
+  row-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "redes" "mapa" "contacto";
+}
+#footer .redes {
+  grid-area: redes;
+  display: grid;
+  justify-self: center;
+  gap: 0.8rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "af" "ai" "at";
+}
+#footer .redes a {
+  text-decoration: none;
+  color: #EFF5F5;
+}
+#footer .redes a p {
+  margin: 0;
+}
+#footer .redes a p img {
+  width: 26px;
+  height: 26px;
+}
+#footer .redes a:hover {
+  color: hotpink !important;
+}
+#footer .redes .af {
+  grid-area: af;
+}
+#footer .redes .ai {
+  grid-area: ai;
+}
+#footer .redes .at {
+  grid-area: at;
+}
+#footer .mapa {
+  grid-area: mapa;
+  justify-self: center;
+}
+#footer .mapa iframe {
+  max-width: 500px;
+  max-height: 500px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0.3rem 0.3rem 0.8rem #181823;
+}
+#footer .contacto {
+  grid-area: contacto;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  #footer {
+    padding: 2rem 3rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "redes mapa contacto";
+  }
+  .redes {
+    align-content: start;
+  }
+  .contacto {
+    align-content: start;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=index.css.map */

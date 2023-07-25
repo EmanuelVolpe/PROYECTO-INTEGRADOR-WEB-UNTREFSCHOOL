@@ -1,0 +1,96 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+#footer {
+    background-color: map-get(colors.$colors, 'verde');
+    color: map-get(colors.$colors , 'blanco');
+    height: auto;
+    padding: 2rem;
+    row-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "redes"
+        "mapa"
+        "contacto";
+
+    .redes {
+        grid-area: redes;
+        display: grid;
+        justify-self: center;
+        gap: 0.8rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "af"
+            "ai"
+            "at";
+
+        a {
+            text-decoration: none;
+            color: map-get(colors.$colors , 'blanco');
+
+            p {
+                margin: 0;
+
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+
+        a:hover {
+            color: hotpink !important;
+        }
+
+        .af {
+            grid-area: af;
+        }
+
+        .ai {
+            grid-area: ai;
+        }
+
+        .at {
+            grid-area: at;
+        }
+    }
+
+    .mapa {
+        grid-area: mapa;
+        justify-self: center;
+
+        iframe {
+            max-width: 500px;
+            max-height: 500px;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0.3rem 0.3rem 0.8rem map-get(colors.$colors , 'negro');
+        }
+    }
+
+    .contacto {
+        grid-area: contacto;
+        justify-self: center;
+    }
+}
+
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
+    #footer {
+        padding: 2rem 3rem;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "redes mapa contacto";
+    }
+
+    .redes {
+        align-content: start;
+    }
+
+    .contacto {
+        align-content: start;
+    }
+}

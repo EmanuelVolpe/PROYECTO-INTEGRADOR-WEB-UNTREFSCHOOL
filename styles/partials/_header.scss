@@ -1,0 +1,35 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+header {
+    background-image: url("../../images/banner_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+h1 {
+    color: map-get(colors.$colors , 'negro');
+}
+
+ul {
+    a:hover {
+        color: hotpink !important;
+    }
+}
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints, 'mobile')) {
+    header {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints, 'tablet')) {
+    header {
+        padding-top: 3rem;
+    }
+}

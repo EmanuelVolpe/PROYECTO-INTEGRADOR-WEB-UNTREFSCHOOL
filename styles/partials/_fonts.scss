@@ -1,2 +1,90 @@
+@use '_colors';
+@use '_breakpoints';
+
 $fonts : ('poppins': Poppins,
-    'belanosima': Belanosima)
+    'belanosima': Belanosima);
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints, 'mobile')) {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 5rem;
+        font-family: map-get($fonts , 'belanosima');
+        text-shadow: 2px 2px 2px map-get(colors.$colors , 'naranja');
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: 3px 3px 2px map-get(colors.$colors , 'negro');
+        font-family: map-get($fonts, 'belanosima');
+        color: map-get(colors.$colors, 'naranja');
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-family: map-get($fonts, 'belanosima');
+        color: map-get(colors.$colors, 'negro');
+    }
+
+    p,
+    a,
+    label,
+    input,
+    button {
+        font-family: map-get($fonts, 'poppins');
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p,
+    a,
+    label,
+    input,
+    button {
+        font-family: map-get($fonts, 'poppins');
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'desktop')) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p,
+    a,
+    label,
+    input,
+    button {
+        font-family: map-get($fonts, 'poppins');
+        font-size: 1.3rem;
+    }
+
+}

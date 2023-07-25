@@ -1,0 +1,70 @@
+@use '_colors';
+@use '_fonts';
+@use '_breakpoints';
+
+#noticias {
+    background-color: map-get(colors.$colors , 'azul');
+    color: map-get(colors.$colors , 'blanco');
+    padding: 2rem;
+    text-align: justify;
+
+    h3 {
+        text-align: left;
+    }
+}
+
+.noticias {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "noticia1"
+        "noticia2"
+        "noticia3";
+}
+
+.noticia1 {
+    grid-area: noticia1;
+}
+
+.noticia2 {
+    grid-area: noticia2;
+}
+
+.noticia3 {
+    grid-area: noticia3;
+}
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
+    .noticias {
+        padding: 0 3rem;
+        column-gap: 3rem;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "noticia1 noticia2"
+            "noticia3 noticia3";
+    }
+
+    #noticias {
+        padding: 3rem 3rem;
+    }
+
+}
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'desktop')) {
+    .noticias {
+        padding: 0 3rem;
+        column-gap: 4rem;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "noticia1 noticia2 noticia3";
+    }
+
+    #noticias {
+        padding: 3rem 5rem;
+    }
+}
