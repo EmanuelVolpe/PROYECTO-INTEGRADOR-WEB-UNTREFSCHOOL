@@ -18,6 +18,7 @@ $fonts : ('poppins': Poppins,
         text-shadow: 3px 3px 2px map-get(colors.$colors , 'negro');
         font-family: map-get($fonts, 'belanosima');
         color: map-get(colors.$colors, 'naranja');
+        margin-bottom: 1rem;
     }
 
     h3 {

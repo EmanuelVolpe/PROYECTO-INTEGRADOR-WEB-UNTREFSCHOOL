@@ -11,6 +11,7 @@
     text-shadow: 3px 3px 2px #181823;
     font-family: Belanosima;
     color: #FC7300;
+    margin-bottom: 1rem;
   }
   h3 {
     font-size: 1.5rem;
@@ -91,7 +92,6 @@ ul a:hover {
 
 #quienes,
 #porq {
-  height: 100vh;
   color: #EFF5F5;
   padding: 2rem;
   text-align: justify;
