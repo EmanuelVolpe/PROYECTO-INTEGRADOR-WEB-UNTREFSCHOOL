@@ -2,11 +2,13 @@ h1 {
   font-size: 3rem;
   text-align: center;
   font-family: Belanosima;
+  text-shadow: 2px 2px 2px #FC7300;
 }
 
 h2 {
   font-size: 2rem;
   text-align: center;
+  text-shadow: 3px 3px 2px #181823;
   font-family: Belanosima;
   color: #FC7300;
 }
@@ -203,24 +205,18 @@ ul a:hover {
 #footer {
   background-color: #1F8A70;
   color: #EFF5F5;
-  font-family: Poppins;
   padding: 2rem;
-  text-align: justify;
+  row-gap: 2rem;
   display: grid;
-  gap: 1rem;
-  justify-content: center;
-  justify-items: stretch;
   grid-template-columns: 1fr;
   grid-template-areas: "redes" "mapa" "contacto";
 }
 #footer .redes {
-  width: 100%;
   grid-area: redes;
   display: grid;
   gap: 0.5rem;
-  grid-column: 1rem;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: ". af ." ". ai ." ". at .";
+  grid-template-columns: 1fr;
+  grid-template-areas: "af" "ai" "at";
 }
 #footer .redes a {
   text-decoration: none;
@@ -229,12 +225,15 @@ ul a:hover {
 #footer .redes a p {
   margin: 0;
 }
+#footer .redes a p img {
+  width: 26px;
+  height: 26px;
+}
 #footer .redes a:hover {
   color: hotpink !important;
 }
 #footer .redes .af {
   grid-area: af;
-  align-self: center;
 }
 #footer .redes .ai {
   grid-area: ai;
@@ -242,26 +241,28 @@ ul a:hover {
 #footer .redes .at {
   grid-area: at;
 }
-
-.mapa {
+#footer .mapa {
   grid-area: mapa;
-  align-self: center;
   justify-self: center;
 }
-.mapa iframe {
+#footer .mapa iframe {
   max-width: 500px;
   max-height: 500px;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   box-shadow: 0.3rem 0.3rem 0.8rem #181823;
 }
-
-.contacto {
+#footer .contacto {
   grid-area: contacto;
-  align-self: center;
   justify-self: center;
 }
 
+@media screen and (min-width: 768px) {
+  #footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "redes mapa" "contacto";
+  }
+}
 * {
   padding: 0;
   margin: 0;

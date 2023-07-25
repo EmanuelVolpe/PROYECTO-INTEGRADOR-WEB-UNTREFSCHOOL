@@ -5,13 +5,9 @@
 #footer {
     background-color: map-get(colors.$colors, 'verde');
     color: map-get(colors.$colors , 'blanco');
-    font-family: map-get(fonts.$fonts , 'poppins');
     padding: 2rem;
-    text-align: justify;
+    row-gap: 2rem;
     display: grid;
-    gap: 1rem;
-    justify-content: center;
-    justify-items: stretch;
     grid-template-columns: 1fr;
     grid-template-areas:
         "redes"
@@ -19,20 +15,14 @@
         "contacto";
 
     .redes {
-        width: 100%;
         grid-area: redes;
-        //justify-content: center;
-        //align-content: center;
-        //justify-items: stretch;
-        //align-items: center;
         display: grid;
         gap: 0.5rem;
-        grid-column: 1rem;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            ". af ."
-            ". ai ."
-            ". at .";
+            "af"
+            "ai"
+            "at";
 
         a {
             text-decoration: none;
@@ -40,6 +30,11 @@
 
             p {
                 margin: 0;
+
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
             }
         }
 
@@ -49,7 +44,6 @@
 
         .af {
             grid-area: af;
-            align-self: center;
         }
 
         .ai {
@@ -61,24 +55,32 @@
         }
     }
 
-}
+    .mapa {
+        grid-area: mapa;
+        justify-self: center;
 
-.mapa {
-    grid-area: mapa;
-    align-self: center;
-    justify-self: center;
+        iframe {
+            max-width: 500px;
+            max-height: 500px;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0.3rem 0.3rem 0.8rem map-get(colors.$colors , 'negro');
+        }
+    }
 
-    iframe {
-        max-width: 500px;
-        max-height: 500px;
-        width: 200px;
-        height: 200px;
-        box-shadow: 0.3rem 0.3rem 0.8rem map-get(colors.$colors , 'negro');
+    .contacto {
+        grid-area: contacto;
+        justify-self: center;
     }
 }
 
-.contacto {
-    grid-area: contacto;
-    align-self: center;
-    justify-self: center;
+
+
+@media screen and (min-width:map-get(breakpoints.$breakpoints , 'tablet')) {
+    #footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "redes mapa"
+            "contacto";
+    }
 }

@@ -2,11 +2,13 @@ h1 {
   font-size: 3rem;
   text-align: center;
   font-family: Belanosima;
+  text-shadow: 2px 2px 2px #FC7300;
 }
 
 h2 {
   font-size: 2rem;
   text-align: center;
+  text-shadow: 3px 3px 2px #181823;
   font-family: Belanosima;
   color: #FC7300;
 }

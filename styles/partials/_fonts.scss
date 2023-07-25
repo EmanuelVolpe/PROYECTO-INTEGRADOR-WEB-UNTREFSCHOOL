@@ -7,11 +7,13 @@ h1 {
     font-size: 3rem;
     text-align: center;
     font-family: map-get($fonts , 'belanosima');
+    text-shadow: 2px 2px 2px map-get(colors.$colors , 'naranja');
 }
 
 h2 {
     font-size: 2rem;
     text-align: center;
+    text-shadow: 3px 3px 2px map-get(colors.$colors , 'negro');
     font-family: map-get($fonts , 'belanosima');
     color: map-get(colors.$colors , 'naranja');
 }
