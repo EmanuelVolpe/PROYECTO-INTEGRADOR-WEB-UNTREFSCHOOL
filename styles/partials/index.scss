@@ -2,8 +2,6 @@
 @use '_fonts';
 @use '_breakpoints';
 @use '_header';
-// @use '_quienes';
-// @use '_porq';
 @use '_main';
 @use '_propuesta';
 @use '_noticias';
@@ -13,15 +11,4 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-family: map-get(fonts.$fonts , 'belanosima');
-}
-
-h2 {
-    font-size: 2rem;
-    font-family: map-get(fonts.$fonts , 'belanosima');
-    padding-bottom: 1rem;
 }

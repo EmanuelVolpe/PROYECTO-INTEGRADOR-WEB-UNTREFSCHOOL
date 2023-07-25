@@ -1,32 +1,69 @@
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: Belanosima;
-  text-shadow: 2px 2px 2px #FC7300;
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: Belanosima;
+    text-shadow: 2px 2px 2px #FC7300;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 3px 3px 2px #181823;
+    font-family: Belanosima;
+    color: #FC7300;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-family: Belanosima;
+    color: #181823;
+  }
+  p,
+  a,
+  label,
+  input,
+  button {
+    font-family: Poppins;
+    font-size: 1rem;
+  }
 }
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  text-shadow: 3px 3px 2px #181823;
-  font-family: Belanosima;
-  color: #FC7300;
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p,
+  a,
+  label,
+  input,
+  button {
+    font-family: Poppins;
+    font-size: 1.1rem;
+  }
 }
-
-h3 {
-  font-size: 1.5rem;
-  font-family: Belanosima;
-  color: #181823;
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p,
+  a,
+  label,
+  input,
+  button {
+    font-family: Poppins;
+    font-size: 1.3rem;
+  }
 }
-
-p,
-a,
-label,
-input,
-button {
-  font-family: Poppins;
-}
-
 header {
   background-image: url("../../images/banner_mobile.jpg");
   background-repeat: no-repeat;
@@ -54,6 +91,7 @@ ul a:hover {
 
 #quienes,
 #porq {
+  height: 100vh;
   color: #EFF5F5;
   padding: 2rem;
   text-align: justify;
@@ -98,7 +136,7 @@ ul a:hover {
     grid-template-areas: "texto img";
   }
   .porq {
-    gap: 1rem;
+    column-gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img texto";
   }
@@ -236,6 +274,7 @@ ul a:hover {
 #footer {
   background-color: #1F8A70;
   color: #EFF5F5;
+  height: auto;
   padding: 2rem;
   row-gap: 1rem;
   display: grid;
@@ -306,17 +345,6 @@ ul a:hover {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-family: Belanosima;
-}
-
-h2 {
-  font-size: 2rem;
-  font-family: Belanosima;
-  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -13,6 +13,7 @@
 
 #quienes,
 #porq {
+    height: 100vh;
     color: map-get(colors.$colors , 'blanco');
     padding: 2rem;
     text-align: justify;
@@ -64,7 +65,7 @@
     }
 
     .porq {
-        gap: 1rem;
+        column-gap: 2rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "img texto";
