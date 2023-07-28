@@ -3,7 +3,6 @@
 @use '_breakpoints';
 
 header {
-    background-image: url("../../images/banner_mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,6 +16,7 @@ ul {
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints, 'mobile')) {
     header {
+        background-image: url("../images/banner_mobile.jpg");
         height: 30vh;
         padding-top: 20%;
     }
@@ -24,6 +24,7 @@ ul {
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints, 'tablet')) {
     header {
+        background-image: url("../images/banner_tablet.jpg");
         height: 30vh;
         padding-top: 1%;
     }
@@ -31,6 +32,7 @@ ul {
 
 @media screen and (min-width:map-get(breakpoints.$breakpoints, 'desktop')) {
     header {
+        background-image: url("../images/banner_tablet.jpg");
         height: 30vh;
         padding-top: 0.5%;
     }
